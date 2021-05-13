@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<style type="text/css">
+		#searchField {
+			background: #fff;
+			display: flex;
+			border: 1px solid #dfe1e5;
+			width: 690px;
+			border-radius: 24px;
+			z-index: 3;
+			height: 44px;
+			margin: 0 auto;
+		}
+
+		input[type="submit"] {
+			background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+			background-color: #f2f2f2;
+			border: 1px solid #f2f2f2;
+			border-radius: 4px;
+			color: #5F6368;
+			font-family: arial,sans-serif;
+			font-size: 14px;
+			margin: 11px 4px;
+			padding: 0 16px;
+			line-height: 27px;
+			height: 36px;
+			min-width: 54px;
+			text-align: center;
+			cursor: pointer;
+			user-select: none;
+		}
+
+		input[type="submit"]:hover {
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+			background-color: #f8f8f8;
+			border: 1px solid #c6c6c6;
+			color: #222;
+		}
+    	</style>
+
+    	 <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <title>Advanced Search</title>
+    </head>
+    <body>
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	    <!-- NavBar -->
+	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="index.html">CS50W Search</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav ml-auto">
+		      <a class="nav-item nav-link" href="index.html">Home</a>
+		      <a class="nav-item nav-link" href="imageSearch.html">Image Search</a>
+		      <a class="nav-item nav-link active" href="advancedSearch.html">Advanced Search <span class="sr-only">(current)</span></a>
+		    </div>
+		  </div>
+		</nav>
+
+		<div class="container p-5">
+			<center>
+			<div>
+				<img alt="Wear a Mask. Save Lives: Help Stop Coronavirus" src="wear-a-mask-save-lives-copy-6753651837108810-law.gif" style="padding-top:61px" title="Wear a Mask. Save Lives: Help Stop Coronavirus" data-atf="1" width="548" height="201" border="0">
+			</div>
+			<form action="https://google.com/search" class="p-5">
+				<label>Find pages with...</label>
+				<br>
+				<label for="as_q">all these words: </label>
+				<input type="text" name="as_q" id="searchField"/>
+				<label for="as_epq">this exact word or phrase: </label>
+				<input type="text" name="as_epq" id="searchField"/>
+				<label for="as_oq">any of these words: </label>
+				<input type="text" name="as_oq" id="searchField"/>
+				<label for="as_eq">none of these words: </label>
+				<input type="text" name="as_eq" id="searchField"/>
+
+				<input type="submit" value="Google Advanced Search" />
+			</form>
+		    </center>
+		</div>
+	    
+    </body>
+</html>
